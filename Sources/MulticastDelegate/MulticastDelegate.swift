@@ -36,19 +36,14 @@ public class MulticastDelegate<T> where T: AnyObject {
     }
 
     public func remove(delegate: T) {
-        guard let index = self[delegate] else { return }
-
-        delegates.remove(at: index)
+        _ = self[delegate].map { delegates.remove(at: $0) }
     }
 
     public func update(using completion: @escaping (T) -> Void) {
         // Recycle the values that are nil so the completion closure is called for non nil values
         recycle()
 
-        for delegate in delegates {
-            guard let value = delegate.value else { continue }
-            completion(value)
-        }
+        delegates.forEach { $0.value.map(completion) }
     }
 
     // MARK: Operators
