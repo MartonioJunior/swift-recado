@@ -48,18 +48,22 @@ traits.insert(
 // MARK: - Targets
 let targets: [Target] = [
     .target(
+        name: "Events",
+        swiftSettings: .upcomingFeatures
+    ),
+    .target(
         name: "MulticastDelegate",
         swiftSettings: .upcomingFeatures
     ),
     .target(
         name: "Recado",
-        dependencies: ["MulticastDelegate", "Subscriptions"],
+        dependencies: ["Events", "MulticastDelegate", "Subscriptions"],
         swiftSettings: .upcomingFeatures
     ),
     .target(
         name: "Subscriptions",
         swiftSettings: .upcomingFeatures
-    ),
+    )
 ]
 
 let testTargets: [Target] = targets.map { t in
