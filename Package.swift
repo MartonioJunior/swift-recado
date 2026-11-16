@@ -59,20 +59,20 @@ let targets: [Target] = [
     .target(
         name: "Events",
         dependencies: ["Subscriptions", variety],
-        swiftSettings: .upcomingFeatures
+        swiftSettings: .allFeatures
     ),
     .target(
         name: "MulticastDelegate",
-        swiftSettings: .upcomingFeatures
+        swiftSettings: .allFeatures
     ),
     .target(
         name: "Recado",
         dependencies: ["Events", "MulticastDelegate", "Subscriptions"],
-        swiftSettings: .upcomingFeatures
+        swiftSettings: .allFeatures
     ),
     .target(
         name: "Subscriptions",
-        swiftSettings: .upcomingFeatures
+        swiftSettings: .allFeatures
     )
 ]
 
