@@ -92,6 +92,7 @@ let products: [Product] = [
 let package = Package(
     name: "Recado",
     products: products,
+    traits: traits,
     dependencies: dependencies,
     targets: targets + testTargets,
     swiftLanguageModes: [.v6]
