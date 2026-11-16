@@ -5,7 +5,7 @@
 //  Created by Martônio Júnior on 30/03/2026.
 //
 
-import Subscriptions
+public import Subscriptions
 
 /// Data structure that manages a list of subscribers to an event.
 public struct EventListener<E: Event>: ~Copyable {
