@@ -58,7 +58,7 @@ let dependencies: [Package.Dependency] = [
 let targets: [Target] = [
     .target(
         name: "Events",
-        dependencies: [variety],
+        dependencies: ["Subscriptions", variety],
         swiftSettings: .upcomingFeatures
     ),
     .target(
