@@ -6,3 +6,4 @@
 //
 
 @_exported import MulticastDelegate
+@_exported import Subscriptions

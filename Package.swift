@@ -53,9 +53,13 @@ let targets: [Target] = [
     ),
     .target(
         name: "Recado",
-        dependencies: ["MulticastDelegate"],
+        dependencies: ["MulticastDelegate", "Subscriptions"],
         swiftSettings: .upcomingFeatures
-    )
+    ),
+    .target(
+        name: "Subscriptions",
+        swiftSettings: .upcomingFeatures
+    ),
 ]
 
 let testTargets: [Target] = targets.map { t in
