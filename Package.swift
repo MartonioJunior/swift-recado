@@ -39,16 +39,26 @@ func targetDep(name: String, package: String, condition: TargetDependencyConditi
 }
 
 // MARK: - Traits
-var traits: Set<Trait> = []
+var traits: Set<Trait> = [
+    .trait(name: "Variety", description: "Adds support for heterogeneous collections.")
+]
 
 traits.insert(
     .default(enabledTraits: Set(traits.map(\.name)))
 )
 
+// MARK: - Dependencies
+let variety = targetDep(name: "SwiftVariety", package: "swift-variety", condition: .when(traits: ["Variety"]))
+
+let dependencies: [Package.Dependency] = [
+    .package(url: "https://github.com/MartonioJunior/swift-variety", .upToNextMajor(from: "0.1.1"))
+]
+
 // MARK: - Targets
 let targets: [Target] = [
     .target(
         name: "Events",
+        dependencies: [variety],
         swiftSettings: .upcomingFeatures
     ),
     .target(
@@ -82,6 +92,7 @@ let products: [Product] = [
 let package = Package(
     name: "Recado",
     products: products,
+    dependencies: dependencies,
     targets: targets + testTargets,
     swiftLanguageModes: [.v6]
 )
