@@ -1,6 +1,6 @@
 //
 //  RegistryPublisher.swift
-//  Trinkets
+//  Recado
 //
 //  Created by Martônio Júnior on 05/06/2025.
 //

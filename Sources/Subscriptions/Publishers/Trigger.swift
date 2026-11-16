@@ -1,6 +1,6 @@
 //
 //  Trigger.swift
-//  Trinkets
+//  Recado
 //
 //  Created by Martônio Júnior on 02/04/2026.
 //

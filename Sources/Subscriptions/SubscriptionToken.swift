@@ -1,6 +1,6 @@
 //
 //  SubscriptionToken.swift
-//  Trinkets
+//  Recado
 //
 //  Created by Martônio Júnior on 24/10/2025.
 //

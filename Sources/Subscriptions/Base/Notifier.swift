@@ -1,6 +1,6 @@
 //
 //  Notifier.swift
-//  Trinkets
+//  Recado
 //
 //  Created by Martônio Júnior on 30/03/2026.
 //

@@ -1,6 +1,6 @@
 //
 //  Receiver.swift
-//  Trinkets
+//  Recado
 //
 //  Created by Martônio Júnior on 13/05/2026.
 //
