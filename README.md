@@ -1,3 +1,3 @@
-# Swift Multicast Delegate
+# Recado
 
-> An implementation of the Multicast Delegate pattern in Swift.
+> A toolbox of messaging mechanisms between objects.

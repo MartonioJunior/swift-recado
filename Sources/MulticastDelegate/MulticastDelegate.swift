@@ -1,6 +1,6 @@
 //
 //  MulticastDelegate.swift
-//
+//  Recado
 //
 //  Created by Martônio Júnior on 24/09/23.
 //

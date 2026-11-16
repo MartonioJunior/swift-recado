@@ -1,12 +1,13 @@
 //
 //  Weak.swift
-//  Implementation of Weak Reference pattern
+//  Recado
 //
 //  Created by Martônio Júnior on 24/09/23.
 //
 
 import Foundation
 
+/// Implementation of Weak Reference pattern.
 @propertyWrapper
 public struct Weak<T: AnyObject> {
     // MARK: Variables
